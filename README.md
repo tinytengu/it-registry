@@ -1,6 +1,8 @@
 # it-registry
 
-Реестр аккредитованных IT орагнизаций по РФ на VueJS + Flask 
+Реестр аккредитованных IT орагнизаций по РФ на VueJS + Flask
+
+![Превью](https://github.com/tinytengu/it-registry/blob/main/media/pc-1.png?raw=true)
 
 ## Установка зависимостей (*NIX, Debian-based)
 ```sh
@@ -47,3 +49,13 @@ cd ..\it-registry-flask
 env\Scripts\activate
 python main.py
 ```
+
+<details>
+  <summary>Изображения</summary>
+
+  ![pc-1](https://github.com/tinytengu/it-registry/blob/main/media/pc-1.png?raw=true)
+  ![pc-2](https://github.com/tinytengu/it-registry/blob/main/media/pc-2.png?raw=true)
+  ![mobile-1](https://github.com/tinytengu/it-registry/blob/main/media/mobile-1.jpg?raw=true)
+  ![mobile-2](https://github.com/tinytengu/it-registry/blob/main/media/mobile-2.jpg?raw=true)
+
+</details>
