@@ -1,7 +1,49 @@
-# Vue 3 + Vite
+# it-registry
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Реестр аккредитованных IT орагнизаций по РФ на VueJS + Flask 
 
-## Recommended IDE Setup
+## Установка зависимостей (*NIX, Debian-based)
+```sh
+sudo apt update
+sudo apt install build-essential checkinstall libssl-dev python-software-properties python3-venv g++ make
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt update
+sudo apt install nodejs npm
+```
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+## Клонирование и запуск development сервера
+```sh
+git clone https://github.com/tinytengu/it-registry.git
+cd it-registry
+npm install
+npm run dev
+```
+
+## Cборка проекта во Flask приложение
+### *NIX
+```sh
+# Cборка продакш версии проекта
+npm run build
+
+# Конвертация папки dist в папку во Flask проект
+python3 vtf.py --output=../it-registry-flask
+
+# Запуск проекта
+cd ../it-registry-flask
+source env/bin/activate
+python main.py
+```
+
+### Windows
+```sh
+# Cборка продакш версии проекта
+npm run build
+
+# Конвертация папки dist в папку во Flask проект
+vtf.py --output=..\it-registry-flask
+
+# Запуск проекта
+cd ..\it-registry-flask
+env\Scripts\activate
+python main.py
+```
