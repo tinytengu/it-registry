@@ -96,7 +96,7 @@ export default {
                 `^${this.search.value}`,
                 `${this.search.value}$`
             ];
-            const pattern = patterns[this.search.filterIdx];
+            const pattern = new RegExp(patterns[this.search.filterIdx], 'i');
 
             for (let i = 1; i < this.organizations.length; i++) {
                 if (this.organizations[i][this.search.fieldIdx].match(pattern)) {
